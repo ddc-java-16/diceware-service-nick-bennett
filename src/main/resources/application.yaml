@@ -1,0 +1,15 @@
+server:
+  forward-headers-strategy: framework
+  port: 8080
+  servlet:
+    context-path: /diceware
+
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+diceware:
+  word-list-name: wordlist.txt
